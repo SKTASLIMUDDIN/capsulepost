@@ -213,8 +213,8 @@ const page = () => {
               <div className="relative">
                 <div className="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
                   <Image
-                    width="100"
-                    height="100"
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
                     src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/blog-grid/6/thumbnail-1.png"
                     alt=""
@@ -261,8 +261,8 @@ const page = () => {
               <div className="relative">
                 <div className="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
                   <Image
-                    width="100"
-                    height="100"
+                    width={500}
+                    height={300}
                     className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
                     src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/blog-grid/6/thumbnail-2.png"
                     alt=""
@@ -309,8 +309,8 @@ const page = () => {
               <div className="relative">
                 <div className="block overflow-hidden aspect-w-16 aspect-h-9 rounded-xl">
                   <Image
-                    width="100"
-                    height="100"
+                   width={500}
+                   height={300}
                     className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
                     src="https://landingfoliocom.imgix.net/store/collection/clarity-blog/images/blog-grid/6/thumbnail-3.png"
                     alt=""

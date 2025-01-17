@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import profilePic from '../public/me.png';
 import { getCategories } from '@/actions/wp.actions';
 import { useEffect, useState } from 'react';
 const Header = () => {
@@ -25,7 +26,7 @@ const Header = () => {
                 width={150}
                 height={180}
                 className=""
-                src="https://snehaltayde.com/wp-content/uploads/2024/07/Screenshot_4.png"
+                src={profilePic}
                 alt=""
               />
             </Link>

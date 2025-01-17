@@ -1,10 +1,21 @@
 'use client';
-export function decodeHTMLEntities(text) {
+{/*export function decodeHTMLEntities(text) {
   const textArea = document?.createElement('textarea');
   textArea.innerHTML = text;
-  return textArea.value;
-}
+  return textArea.value;*/}
+  import { decode } from 'he';
 
+export function decodeHTMLEntities(text) {
+  if (typeof document !== 'undefined') {
+    const textArea = document.createElement('textarea');
+    textArea.innerHTML = text;
+    return textArea.value;
+  }
+  // Return the input text as a fallback during SSR
+  return decode(text);
+};
+
+ 
 export function formatDate(dateString) {
   // Parse the date string into a Date object
   const date = new Date(dateString);

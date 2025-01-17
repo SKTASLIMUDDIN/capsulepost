@@ -10,8 +10,8 @@ const Comments = ({ post }) => {
   //   }
 
   const [content, setContent] = useState('');
-  const [author_name, setAuthorName] = useState('Snehal');
-  const [author_email, setAuthorEmail] = useState('snehal.tayde13@gmail.com');
+  const [author_name, setAuthorName] = useState('CapsulePost');
+  const [author_email, setAuthorEmail] = useState('capsulepost.in@gmail.com.com');
   const [postId, setPostId] = useState(post.id);
 
   const handleSubmit = async (e) => {

@@ -85,18 +85,19 @@ const Page = ({ params }) => {
           </div>
         </div>
 
-        <div className="mt-8 sm:mt-12 lg:mt-16 aspect-w-16 aspect-h-9 lg:aspect-h-6">
-          <Image
-            width={500}
-            height={500}
-            className="object-cover w-full h-full"
-            src={
-              post?.featured_image_url
-                ? post?.featured_image_url
-                : 'https://loading.io/assets/mod/spinner/spinner/lg.gif'
-            }
-            alt=""
-          />
+        /<div className="mt-6 sm:mt-10 lg:mt-14 aspect-w-16 aspect-h-8 lg:aspect-h-6">
+        
+                    {post._embedded?.['wp:featuredmedia']?.[0] && (
+                    <Image
+                        className="object-cover w-full h-full transition-all duration-200 transform group-hover:scale-110"
+                        src={post._embedded['wp:featuredmedia'][0].source_url}
+                        alt={post._embedded['wp:featuredmedia'][0].alt_text || 'Featured Image'}
+                        width={800}
+                        height={600}
+                      />
+                    )}
+                
+          
         </div>
 
         <div className="grid grid-cols-1 mt-8 sm:mt-12 lg:mt-16 lg:grid-cols-12 lg:gap-x-12 gap-y-8">
